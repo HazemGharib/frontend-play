@@ -1,0 +1,67 @@
+.pokemon-ball {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    animation: load 2s infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.5);
+    }
+    75% {
+        transform: rotate(360deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.pokemon-ball-half {
+    border: 20px solid black;
+    width: 360px;
+    height: 160px;
+    position: absolute;
+}
+
+#half1 {
+    top: 0px;
+    background: red;
+    border-top-right-radius: 380px;
+    border-top-left-radius: 380px;
+}
+
+#half2 {
+    bottom: 0px;
+    background: white;
+    border-bottom-right-radius: 380px;
+    border-bottom-left-radius: 380px;
+}
+
+.pokemon-ball-button {
+    background: white;
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.pokemon-ball-button#outter {
+    width: 80px;
+    height: 80px;
+    border: 20px solid black;
+}
+
+.pokemon-ball-button#inner {
+    width: 30px;
+    height: 30px;
+    border: 10px solid black;
+}
