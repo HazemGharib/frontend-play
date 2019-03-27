@@ -1,0 +1,129 @@
+.stack-layer {
+    width: 100px;
+    height: 40px;
+}
+
+.stack-layer.white {
+    animation: load-white 5s infinite backwards;
+}
+
+.stack-layer.black {
+    animation: load-black 5s infinite;
+}
+
+@keyframes load-white {
+    0% {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+    17% {
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+    34% {
+        position: relative;
+        right: 100px;
+        top: 100px;
+    }
+    51% {
+        position: relative;
+        right: 0px;
+        top: 100px;
+    }
+    68% {
+        position: relative;
+        right: 100px;
+        top: 100px;
+    }
+    85% {
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+    100% {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes load-black {
+    0% {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+    17% {
+        position: relative;
+        right: -100px;
+        top: 0px;
+    }
+    34% {
+        position: relative;
+        right: -100px;
+        top: -100px;
+    }
+    51% {
+        position: relative;
+        right: 0px;
+        top: -100px;
+    }
+    68% {
+        position: relative;
+        right: -100px;
+        top: -100px;
+    }
+    85% {
+        position: relative;
+        right: -100px;
+        top: 0px;
+    }
+    100% {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+}
+
+
+.white > .stack-layer.top {
+    background: #ffffff;
+    transform: skew(45deg) scale(1, 0.5);
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.white > .stack-layer.front {
+    background: #eeffff;
+}
+
+.white > .stack-layer.depth {
+    background: #efefef;
+    transform: skew(0deg , 45deg) scale(0.2, 1);
+    position: relative;
+    right: 60px;
+    bottom: 50px;
+}
+
+.black > .stack-layer.top {
+    background: #000000;
+    transform: skew(45deg) scale(1, 0.5);
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.black > .stack-layer.front {
+    background: #222222; 
+}
+
+.black > .stack-layer.depth {
+    background: #101010;
+    transform: skew(0deg , 45deg) scale(0.2, 1);
+    position: relative;
+    right: 60px;
+    bottom: 50px;
+}
