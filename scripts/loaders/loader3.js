@@ -3,13 +3,13 @@ function goHome() {
 }
 
 function showLoader() {
-    [].forEach.call(document.getElementsByClassName('stack-layer'), function (el) {
+    [].forEach.call(document.getElementsByClassName('triangle'), function (el) {
         el.style.display = 'block';
     });
 }
 
 function hideLoader() {
-    [].forEach.call(document.getElementsByClassName('stack-layer'), function (el) {
+    [].forEach.call(document.getElementsByClassName('triangle'), function (el) {
         el.style.display = 'none';
     });
 }

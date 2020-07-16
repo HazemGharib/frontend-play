@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Loader 1</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/loaders/loader1.css">
+    <script src="../../scripts/loaders/loader1.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+</html>
